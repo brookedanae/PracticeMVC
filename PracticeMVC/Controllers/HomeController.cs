@@ -20,7 +20,13 @@ namespace PracticeMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = new InfoViewModel
+            {
+                FirstName = "Brooke",
+                LastName = "Darby",
+                GetDate = DateTime.Now
+            };
+            return View(model);
         }
 
         public IActionResult Privacy()

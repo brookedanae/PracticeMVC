@@ -1,6 +1,10 @@
-﻿@{
+﻿@model InfoViewModel
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
+
+<h1>Welcome again, @Model.FirstName @Model.LastName!</h1>
+<h3>The time is now @Model.GetDate.</h3>
 
 <p>Use this page to detail your site's privacy policy.</p>
